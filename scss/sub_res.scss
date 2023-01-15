@@ -1,0 +1,318 @@
+$mo768:768px;
+$mo1280:1280px;
+@mixin gmarketsans() {
+    font-family: "GmarketSans";
+}
+@mixin min_width ($screen){
+    @media screen and (min-width:$screen) {
+        @content;
+    }
+}
+
+/* 테블릿 */
+@include min_width ($mo768) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 25rem;
+            .main_banner {
+                height: 100%;
+            }
+        }
+    }
+    .lnb_container {
+        width: 100%;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        .lnb_wrap {
+            .lnb_box {
+                height: 5.9rem;
+                .lnb_home {
+                    width: 7rem;
+                }
+                .flexbox {
+                    font-size: 1.9rem;
+                    &.depth2 {
+                        display: none;
+                    }
+                    li {
+                        a {
+                            span {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                            }
+                            .arrow {
+                                margin-left: 8rem;
+                            }
+                        }
+                    }
+                }
+                .pc_lnb {
+                    display: flex;
+                    font-size: 1.9rem;
+                    li {
+                        a {
+                            width: 12rem;
+                            display: block;
+                            padding: 1.45rem;
+                            border-right: 1px solid #ddd;
+                            text-align: center;
+                            transition: 0.4s;
+                            &:hover {
+                                color:#fabc00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_long_container {
+        margin-top: 10rem;
+        .main_long_wrap {
+            .main_long_img {
+                width: 80%;
+                padding-top:50%;
+            }
+            .main_long_txt1 {
+                top:38%;
+                left: 50%;
+                width: 100%;
+                font-size: 5rem;
+                color:#fff;
+                line-height: 1.3;
+                text-align: center;
+                transform: translate(-50%, -38%);
+                .life {
+                    padding-left: 2rem;
+                }
+            }
+            .main_long_txt2 {
+                position: absolute;
+                top:75%;
+                left: 80%;
+                font-size: 1.8rem;
+                text-align: left;
+                transform: translate(-60%, -75%);
+                &::before {
+                    left: -9rem;
+                    top:7%;
+                    width: 6rem;
+                    height: 1rem;
+                    content: '';
+                }
+            }
+        }
+    }
+    .main_history_container {
+        margin-top: 10rem;
+        .main_history_wrap {
+            margin: 0 auto;
+            .main_histroy_box {
+                flex-direction:inherit;
+                width: 100%;
+                .histroy_txt {
+                    width: 45%;
+                    margin-left:9rem;
+                    padding-left: 0%;
+                    h3 {
+                        font-size: 4rem;
+                    }
+                    p {
+                        padding-top: 2rem;
+                        font-size: 1.7rem;
+                    }
+                }
+                .histroy_img {
+                    padding-top: 53%;
+                }
+            }
+        }
+    }
+    .main_value_container {
+        .main_value_wrap {
+            .main_value_box {
+                .value_title {
+                    font-size: 4rem;
+                }
+                .value_txtbox {
+                    width: 57rem;
+                    margin: 5rem auto 0 auto;
+                    padding-left: 5rem;
+                    .value_txt {
+                        flex-direction: initial;
+                        margin-top: 0.5rem;
+                        padding: 2rem;
+                        .title {
+                            width: 19rem;
+                            font-size: 3rem;
+                        }
+                        .content {
+                            padding:1rem 0; 
+                            margin-top: 1rem;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_policy_container {
+        .main_policy_wrap {
+            h3 {
+                font-size: 5rem;
+            }
+            .policy_box {
+                .policy {
+                    padding: 7rem;
+                    .policy_txt1 {
+                        font-size: 3rem;
+                    }
+                    .policy_txt2 {
+                        font-size: 1.8rem;
+                    }
+                }
+                .policy1::before {
+                    position: absolute;
+                    left: 6.3rem;
+                    bottom:4rem;
+                    width: 17rem;
+            }
+            }
+        }
+    }
+}
+/* PC */
+@include min_width ($mo1280) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 30rem;
+            .main_banner {
+                .main_banner_img {
+                    .main_banner_txt {
+                        span {
+                            font-size: 2rem;
+                        }
+                        h1 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }        
+    .main_long_container {
+        margin-top: 10rem;
+        .main_long_wrap {
+            .main_long_img {
+                width: 80%;
+                padding-top:50%;
+            }
+            .main_long_txt1 {
+                @include gmarketsans();
+                top:38%;
+                left: 50%;
+                min-width: 90rem;
+                font-size: 8rem;
+                color:#fff;
+                line-height: 1.4;
+                text-align: center;
+                transform: translate(-50%, -38%);
+                .life {
+                    padding-left: 4rem;
+                }
+            }
+            .main_long_txt2 {
+                position: absolute;
+                top:85%;
+                left:120%;
+                font-size: 2rem;
+                text-align: left;
+                transform: translate(-120%, -85%);
+                &::before {
+                    left: -13rem;
+                    top:7%;
+                    width: 10rem;
+                    height: 1.5rem;
+                    content: '';
+                }
+            }
+        }
+    }
+    .main_history_container {
+        .main_history_wrap {
+            .main_histroy_box {
+                flex-direction:initial;
+                // width: 100%;
+                .histroy_txt {
+                    width:100%;
+                    margin-left:0rem;
+                    margin-right: 15rem;
+                    h3 {
+                        font-size: 6rem;
+                        padding-top: 5rem;
+                    }
+                    p {
+                        padding-top: 2rem;
+                        font-size: 2rem;
+                    }
+                }
+                .histroy_img {
+                    padding-top: 50%;
+                    width: 100%;
+                    &:before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .main_value_container {
+        .main_value_wrap {
+            padding: 10rem 0;
+            .main_value_box {
+                justify-content: space-between;
+                flex-direction: initial;
+                gap:25rem;
+                .value_title {
+                    margin-top: 4rem;
+                    font-size: 6rem;
+                    text-align:initial;
+                }
+                .value_txtbox {
+                    width: 60rem;
+                    margin: 0 auto;
+                    padding-left: 3rem;
+                    .value_txt {
+                        padding: 2.5rem 0rem 2.5rem 2.5rem;
+                        margin-top: 2.7rem;
+                        .title {
+                            padding:0;
+                            font-size: 3rem;
+                        }
+                        .content {
+                            padding:0;
+                            margin-top: 0;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main_policy_container {
+        .main_policy_wrap {
+            h3 {
+                font-size: 6rem;
+            }
+            .policy_box {
+                flex-wrap: inherit;
+                .policy {
+                    padding: 7rem;
+                    .policy_txt2 {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

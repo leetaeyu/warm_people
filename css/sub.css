@@ -1,0 +1,427 @@
+/* banner */
+#main_sub_banner {
+  position: relative;
+  padding-top: 6rem;
+}
+#main_sub_banner .main_banner_wrap {
+  width: 100%;
+  height: 20rem;
+}
+#main_sub_banner .main_banner_wrap .main_banner {
+  width: 100%;
+  height: 100%;
+}
+#main_sub_banner .main_banner_wrap .main_banner .main_banner_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sub_header_2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#main_sub_banner .main_banner_wrap .main_banner .main_banner_img::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: "";
+  opacity: 0.2;
+}
+#main_sub_banner .main_banner_wrap .main_banner .main_banner_img .main_banner_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#main_sub_banner .main_banner_wrap .main_banner .main_banner_img .main_banner_txt span {
+  font-size: 1.6rem;
+  color: #fff;
+  opacity: 0.9;
+}
+#main_sub_banner .main_banner_wrap .main_banner .main_banner_img .main_banner_txt h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+/* lnb */
+.lnb_container {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+.lnb_container .lnb_wrap {
+  position: relative;
+  z-index: 1;
+}
+.lnb_container .lnb_wrap .lnb_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5.3rem;
+}
+.lnb_container .lnb_wrap .lnb_box .lnb_home {
+  width: 6rem;
+  border-right: 1px solid #ddd;
+}
+.lnb_container .lnb_wrap .lnb_box .lnb_home a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/lnb_home.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  background-color: #f9f9f9;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li {
+  padding: 1.45rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li a {
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li a:hover {
+  color: #fabc00;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li a span {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-left: 2rem;
+  border: 0.1rem solid;
+  border-width: 0.1rem 0 0 0.1rem;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li a .active3 {
+  margin-bottom: 0.3rem;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.lnb_container .lnb_wrap .lnb_box .flexbox li a .arrow {
+  margin-left: 4rem;
+}
+.lnb_container .lnb_wrap .lnb_box .depth2 {
+  position: relative;
+  left: -0.1rem;
+}
+.lnb_container .lnb_wrap .lnb_box .pc_lnb {
+  display: none;
+}
+
+/* long */
+.main_long_container {
+  margin-top: 5rem;
+}
+.main_long_container .main_long_wrap {
+  position: relative;
+  max-width: 130rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.main_long_container .main_long_wrap .main_long_img {
+  position: relative;
+  width: 90%;
+  padding-top: 60%;
+  margin: 0 auto;
+}
+.main_long_container .main_long_wrap .main_long_img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+}
+.main_long_container .main_long_wrap .main_long_img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sub_1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main_long_container .main_long_wrap .main_long_txt1 {
+  font-family: "GmarketSans";
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.3;
+  text-align: left;
+  -webkit-transform: translate(-20%, -15%);
+          transform: translate(-20%, -15%);
+}
+.main_long_container .main_long_wrap .main_long_txt1 .life {
+  padding-left: 1rem;
+  font-style: italic;
+}
+.main_long_container .main_long_wrap .main_long_txt2 {
+  position: absolute;
+  top: 88%;
+  left: 78%;
+  width: 55%;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-transform: translate(-78%, -88%);
+          transform: translate(-78%, -88%);
+}
+.main_long_container .main_long_wrap .main_long_txt2::before {
+  position: absolute;
+  left: 0;
+  top: -30%;
+  width: 4rem;
+  height: 0.7rem;
+  background-color: #003b99;
+  content: "";
+}
+
+/* history */
+.main_history_container {
+  margin-top: 5rem;
+}
+.main_history_container .main_history_wrap {
+  position: relative;
+  max-width: 104rem;
+}
+.main_history_container .main_history_wrap .main_histroy_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.main_history_container .main_history_wrap .main_histroy_box .histroy_txt {
+  width: 100%;
+  padding-left: 6%;
+}
+.main_history_container .main_history_wrap .main_histroy_box .histroy_txt h3 {
+  font-family: "GmarketSans";
+  font-size: 3rem;
+}
+.main_history_container .main_history_wrap .main_histroy_box .histroy_txt p {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.main_history_container .main_history_wrap .main_histroy_box .histroy_img {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin-top: 5rem;
+}
+.main_history_container .main_history_wrap .main_histroy_box .histroy_img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/sub_2.jpg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main_value_container {
+  margin-top: 10rem;
+  background-color: #f9f9f9;
+}
+.main_value_container .main_value_wrap {
+  position: relative;
+  max-width: 104rem;
+  margin: 0 auto;
+  padding: 7rem 2rem;
+}
+.main_value_container .main_value_wrap .main_value_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main_value_container .main_value_wrap .main_value_box .value_title {
+  font-family: "GmarketSans";
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.main_value_container .main_value_wrap .main_value_box .value_txtbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 4rem 0 4rem;
+  margin-top: 5.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+.main_value_container .main_value_wrap .main_value_box .value_txtbox .value_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #ededed;
+}
+.main_value_container .main_value_wrap .main_value_box .value_txtbox .value_txt .title {
+  font-family: "GmarketSans";
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e10000;
+}
+.main_value_container .main_value_wrap .main_value_box .value_txtbox .value_txt .content {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+.main_policy_container {
+  margin-top: 10rem;
+}
+.main_policy_container .main_policy_wrap {
+  position: relative;
+  max-width: 104rem;
+  margin: 0 auto;
+}
+.main_policy_container .main_policy_wrap h3 {
+  font-family: "GmarketSans";
+  font-size: 3rem;
+  text-align: center;
+}
+.main_policy_container .main_policy_wrap .policy_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy {
+  position: relative;
+  padding: 3rem;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_img {
+  position: relative;
+  width: 50%;
+  padding-top: 55%;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_img1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/sub_icon_1.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_img2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/sub_icon_2.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_img3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/sub_icon_3.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_img4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/sub_icon_4.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_txt1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy .policy_txt2 {
+  width: 200%;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+.main_policy_container .main_policy_wrap .policy_box .policy1::before {
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 14rem;
+  height: 0.1rem;
+  margin-right: 5rem;
+  background-color: #ddd;
+}
+.main_policy_container .main_policy_wrap .policy_box .poclicy4 {
+  margin-top: 0.85rem;
+}

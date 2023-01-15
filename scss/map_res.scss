@@ -1,0 +1,130 @@
+$mo768:768px;
+$mo1280:1280px;
+@mixin gmarketsans() {
+    font-family: "GmarketSans";
+}
+@mixin min_width ($screen){
+    @media screen and (min-width:$screen) {
+        @content;
+    }
+}
+
+/* 테블릿 */
+@include min_width ($mo768) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 25rem;
+            .main_banner {
+                height: 100%;
+            }
+        }
+    }
+    .lnb_container {
+        width: 100%;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        .lnb_wrap {
+            .lnb_box {
+                height: 5.9rem;
+                .lnb_home {
+                    width: 7rem;
+                }
+                .flexbox {
+                    font-size: 1.9rem;
+                    &.depth2 {
+                        display: none;
+                    }
+                    li {
+                        a {
+                            span {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                            }
+                            .arrow {
+                                margin-left: 8rem;
+                            }
+                        }
+                    }
+                }
+                .pc_lnb {
+                    display: flex;
+                    font-size: 1.9rem;
+                    li {
+                        a {
+                            width: 12rem;
+                            display: block;
+                            padding: 1.45rem;
+                            border-right: 1px solid #ddd;
+                            text-align: center;
+                            transition: 0.4s;
+                            &:hover {
+                                color:#fabc00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* map */
+.map_container {
+    .map_wrap {
+        .map_box {
+            margin-top: 7rem;
+            .map {
+                padding-top: 50%;
+            }
+            .map_txt_box {
+                display: flex;
+                margin-top: 3rem;
+                .map_title {
+                    padding-top: 1rem;
+                    padding-right: 3rem;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    border-top:1px solid #fabc00;
+                }
+                .map_flex {
+                    .map_txt {
+                        padding-top: 2rem;
+                        margin-left: 4rem;
+                        font-size: 1.8rem;
+                        span {
+                            width: 13rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+}
+/* PC */
+@include min_width ($mo1280) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 30rem;
+            .main_banner {
+                .main_banner_img {
+                    .main_banner_txt {
+                        span {
+                            font-size: 2rem;
+                        }
+                        h1 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .map_container {
+        margin-top: 15rem;
+        .map_wrap {
+            .map_box {
+                margin-top: 10rem;
+            }
+        }
+    }
+}

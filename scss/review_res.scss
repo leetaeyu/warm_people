@@ -1,0 +1,269 @@
+$mo768:768px;
+$mo1280:1280px;
+@mixin min_width ($screen){
+    @media screen and (min-width:$screen) {
+        @content;
+    }
+}
+@include min_width ($mo768) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 25rem;
+            .main_banner {
+                height: 100%;
+            }
+        }
+    }
+    .lnb_container {
+        width: 100%;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        .lnb_wrap {
+            .lnb_box {
+                height: 5.9rem;
+                .lnb_home {
+                    width: 7rem;
+                }
+                .flexbox {
+                    font-size: 1.9rem;
+                    &.depth2 {
+                        display: none;
+                    }
+                    li {
+                        a {
+                            span {
+                                width: 1.2rem;
+                                height: 1.2rem;
+                            }
+                            .arrow {
+                                margin-left: 5rem;
+                            }
+                            .arrow_notice {
+                                margin-left: 8rem;
+                            }
+                        }
+                    }
+                }
+                .pc_lnb {
+                    display: flex;
+                    font-size: 1.9rem;
+                    li {
+                        a {
+                            width: 13.9rem;
+                            display: block;
+                            padding: 1.45rem;
+                            border-right: 1px solid #ddd;
+                            text-align: center;
+                            transition: 0.4s;
+                            &:hover {
+                                color:#fabc00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .review_container {
+        .review_wrap {
+            .review_flexbox {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4rem;
+                width: 90%;
+                .review_box {
+                    .review_img  {
+                        width: 100%;
+                    }
+                    .review_txt {
+                        width: 100%;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .review_flexbox2 {
+                display: none;
+                padding-top: 10rem;
+            }
+            .star_review {
+                .star_flexbox {
+                    .star_2 {
+                        .star_box1 {
+                            margin: 0 7rem;
+                            .review_img2 {
+                                width: 100%;
+                            }
+                            .star_txt {
+                                width: 100%;
+                                padding-top: 2rem;
+                                font-size: 1.8rem;
+                            }
+                            .star_img3 {a{background-image: url('../images/star_review_2.jpg');}}
+                            .star_img4 {a{background-image: url('../images/star_review_3.jpg');}}
+                        }        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/* PC */
+@include min_width ($mo1280) {
+    #main_sub_banner {
+        .main_banner_wrap {
+            height: 30rem;
+            .main_banner {
+                .main_banner_img {
+                    .main_banner_txt {
+                        span {
+                            font-size: 2rem;
+                        }
+                        h1 {
+                            font-size: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .lnb_container {
+        width: 100%;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        .lnb_wrap {
+            .lnb_box {
+                .pc_lnb {
+                    .notice {
+                        a {
+                            width:13.9rem;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .review_container {
+        margin-top: 10rem;
+        .review_wrap {
+            h3 {
+                text-align:initial;
+            }
+            .review_flexbox {
+                flex-wrap: initial;
+                row-gap: 3rem;
+                width: 100%;
+                margin-left: 0;
+
+                .review_box {
+                    margin-left: 0;
+                    flex-wrap: nowrap;
+                    .review_img  {
+                        width: 100%;
+                        padding-top: 60%;
+                    }
+                    .review_img1 {a {background-image: url(../images/review_1.jpg);}}
+                    .review_img2 {a {background-image: url(../images/review_2.jpg);}}
+                    .review_img3 {a {background-image: url(../images/review_3.jpg);}}
+                    .review_img4 {a {background-image: url(../images/review_5.jpeg);}}
+                    .review_img5 {a {background-image: url(../images/review_4.jpg);}}
+                    .review_img6 {a {background-image: url(../images/review_6.jpg);}}
+                    .review_img7 {a {background-image: url(../images/review_7.jpg);}}
+                    .review_img8 {a {background-image: url(../images/review_8.jpg);}}
+                    .review_txt {
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .review_flexbox2 {
+                display: flex;
+            }
+            .star_review {
+                h3 {
+                    padding-bottom: 5rem;
+                }
+                .star_flexbox {
+                    .star_1 {
+                        display: flex;
+                        gap: 3rem;
+                        .star_box1 {
+                            display: flex;
+                            width: 50%;
+                            .review_img2 {
+                                position: relative;
+                                width: 50%;
+                                padding-top: 50%;
+                                a {
+                                    position: absolute;
+                                    top:0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                            .star_txt {
+                                width: 50%;
+                                padding-left: 3rem;
+                                font-size: 1.8rem;
+                            }
+                            .star_img1 {
+                                a {
+                                    background-image: url('../images/star_review_7.png');
+                                }
+                            }
+                            .star_img2 {
+                                a {
+                                    background-image: url('../images/star_review_12.jfif');
+                                }
+                            }
+    
+                        }
+                    }
+                    .star_2 {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        margin-top: 5rem;
+                        gap:3rem;
+                        .star_box1 {
+                            display: flex;
+                            flex-wrap: nowrap;
+                            width: 50%;
+                            margin: 0;
+                            .review_img2 {
+                                position: relative;
+                                display: block;
+                                width: 50%;
+                                padding-top: 50%;
+                                a {
+                                    position: absolute;
+                                    top:0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                }
+                            }
+                            .star_txt {
+                                width: 50%;
+                                padding-top: 0;
+                                padding-left: 3rem;
+                                font-size: 1.8rem;
+                            }
+                            .star_img3 {a{background-image: url('../images/star_review_2.jpg');}}
+                            .star_img4 {a{background-image: url('../images/star_review_3.jpg');}}
+                        }        
+                    }
+                }
+            }
+        }
+    }
+}
