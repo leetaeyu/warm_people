@@ -111,8 +111,8 @@
   margin-bottom: 0.3rem;
   border: 0.1rem solid;
   border-width: 0.1rem 0 0 0.1rem;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
 }
 .lnb_container .lnb_wrap .lnb_box .flexbox li a .arrow {
   margin-left: 4rem;
