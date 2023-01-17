@@ -21,6 +21,9 @@
   .lnb_container .lnb_wrap .lnb_box .flexbox {
     font-size: 1.9rem;
   }
+  .lnb_container .lnb_wrap .lnb_box .flexbox li a.active9 {
+    width: initial;
+  }
   .lnb_container .lnb_wrap .lnb_box .flexbox.depth2 {
     display: none;
   }

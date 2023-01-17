@@ -89,6 +89,9 @@
                     a {
                         display: block;
                         transition: 0.4s;
+                        &.active9 {
+                            width: 13.5rem;
+                        }
                         &:hover {
                             color:#fabc00;
                         }
@@ -97,17 +100,13 @@
                             width: 0.9rem;
                             height: 0.9rem;
                             margin-left: 2rem;
+                            margin-bottom: 0.3rem;
                             border: 0.1rem solid;
                             border-width: 0.1rem 0 0 0.1rem;
-                            transform: rotate(135deg);
-                        }
-                        .active3 {
-                            margin-bottom: 0.3rem;
                             transform: rotate(225deg);
-                            transition: transform 0.4s;
                         }
                         .arrow {
-                            margin-left: 4rem;
+                            margin-left: 7rem;
                         }
                     }    
                 }

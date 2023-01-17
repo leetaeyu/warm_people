@@ -31,6 +31,13 @@ $mo1280:1280px;
                 }
                 .flexbox {
                     font-size: 1.9rem;
+                    li {
+                        a {
+                            &.active9 {
+                                width: initial;
+                            }
+                        }
+                    }
                     &.depth2 {
                         display: none;
                     }
