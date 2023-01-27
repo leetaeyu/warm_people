@@ -22,7 +22,7 @@ main {
 
         .main_banner_wrap{
             height: calc(100vh - 28rem);
-            overflow: hidden;
+            overflow: hidden; 
             @include respond($mo767) {
                 height: 70rem;
                 
