@@ -296,7 +296,7 @@ main {
                     padding-top: 4rem;
                 }
                 a {
-                    display: line-block;
+                    display: inline-block;
                     font-size: 1.4rem;
                     color: #999;
                     @include respond($mo1279) {
@@ -982,7 +982,7 @@ main {
                         padding-top: 5rem;
                     }
                     a {
-                        display: black;
+                        display: block;
                         padding: 1rem 1.5rem ;
                         font-weight: 600;
                         font-size: 1.4rem;
@@ -1042,7 +1042,7 @@ main {
                     padding-top: 5rem;
                 }
                 a {
-                    display: black;
+                    display: block;
                     padding: 1rem 1.5rem;
                     font-weight: 600;
                     font-size: 1.4rem;

@@ -364,7 +364,7 @@ main .main_concept_container .main_concept_wrap .more_btn2 {
   }
 }
 main .main_concept_container .main_concept_wrap .more_btn2 a {
-  display: line-block;
+  display: inline-block;
   font-size: 1.4rem;
   color: #999;
 }
@@ -1219,7 +1219,7 @@ main .main_news_container .main_news_wrap .main_news_bigbox .more_btn2 {
   }
 }
 main .main_news_container .main_news_wrap .main_news_bigbox .more_btn2 a {
-  display: black;
+  display: block;
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
@@ -1288,7 +1288,7 @@ main .review_container .review_wrap .more_btn2 {
   }
 }
 main .review_container .review_wrap .more_btn2 a {
-  display: black;
+  display: block;
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
