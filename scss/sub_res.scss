@@ -51,13 +51,16 @@ $mo1280:1280px;
                     font-size: 1.9rem;
                     li {
                         a {
-                            width: 12rem;
                             display: block;
+                            width: 12rem;
                             padding: 1.45rem;
                             border-right: 1px solid #ddd;
                             text-align: center;
                             transition: 0.4s;
                             &:hover {
+                                color:#fabc00;
+                            }
+                            &.lnbon {
                                 color:#fabc00;
                             }
                         }

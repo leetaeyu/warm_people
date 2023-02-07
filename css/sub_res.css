@@ -38,8 +38,8 @@
     font-size: 1.9rem;
   }
   .lnb_container .lnb_wrap .lnb_box .pc_lnb li a {
-    width: 12rem;
     display: block;
+    width: 12rem;
     padding: 1.45rem;
     border-right: 1px solid #ddd;
     text-align: center;
@@ -47,6 +47,9 @@
     transition: 0.4s;
   }
   .lnb_container .lnb_wrap .lnb_box .pc_lnb li a:hover {
+    color: #fabc00;
+  }
+  .lnb_container .lnb_wrap .lnb_box .pc_lnb li a.lnbon {
     color: #fabc00;
   }
   .main_long_container {

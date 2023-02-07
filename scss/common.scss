@@ -51,7 +51,9 @@ main.hidden {
     opacity: 1;
     transform: translate(0);
 }
-
+.lnbon {
+    color:#fabc00;
+}
 /* skip 메뉴 */
 #skip {
     position: fixed;
@@ -264,6 +266,19 @@ main.hidden {
                                 @include respond($mo767) {
                                     font-size: 1.8rem;
                                     font-weight: 500;
+                                }
+                                &.true {
+                                    position: relative;
+                                    &::after {
+                                        position: absolute;
+                                        top:0.4rem;
+                                        right: -2rem;
+                                        width: 1rem;
+                                        height: 1rem;
+                                        border-radius: 50%;
+                                        background-color: #c2ae98;
+                                        content: '';
+                                    }
                                 }
                             }
                         }

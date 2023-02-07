@@ -45,6 +45,10 @@ main.hidden {
           transform: translate(0);
 }
 
+.lnbon {
+  color: #fabc00;
+}
+
 /* skip 메뉴 */
 #skip {
   position: fixed;
@@ -277,6 +281,19 @@ main.hidden {
     font-size: 1.8rem;
     font-weight: 500;
   }
+}
+#warm_people_hd .gnb_container .gnb_wrap .gnb_left .depth1 .depth2 li > a.true {
+  position: relative;
+}
+#warm_people_hd .gnb_container .gnb_wrap .gnb_left .depth1 .depth2 li > a.true::after {
+  position: absolute;
+  top: 0.4rem;
+  right: -2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #c2ae98;
+  content: "";
 }
 #warm_people_hd .gnb_container .gnb_wrap .gnb_right {
   display: -webkit-box;
