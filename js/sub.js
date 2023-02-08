@@ -1,4 +1,6 @@
 $(function(){
+    const ac = $(".flexbox > li")
+
     $(function(){
         $(".active_1").click(function(){
             $(this).siblings("li").toggleClass("hide");
@@ -6,6 +8,9 @@ $(function(){
             // $("li").stop().slideUp(300);
             // $("li").stop().slideToggle(300);
         });
+    });
+    $(".flexbox").mouseleave(function(){
+        $(".flexbox > .on").addClass("hide");
     });
     $(function(){
         $(".active_2").click(function(){
