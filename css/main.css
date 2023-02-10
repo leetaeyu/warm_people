@@ -1219,7 +1219,7 @@ main .main_news_container .main_news_wrap .main_news_bigbox .more_btn2 {
   }
 }
 main .main_news_container .main_news_wrap .main_news_bigbox .more_btn2 a {
-  display: block;
+  display: inline-block;
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
@@ -1288,7 +1288,7 @@ main .review_container .review_wrap .more_btn2 {
   }
 }
 main .review_container .review_wrap .more_btn2 a {
-  display: block;
+  display: inline-block;
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-size: 1.4rem;
