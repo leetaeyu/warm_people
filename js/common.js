@@ -30,5 +30,10 @@ $(function(){
         $(".gnb_container").toggleClass("active");
     });
 
+    $("a").click(function(){
+        if($(this).attr("href") == "#") {
+            return false;
+        }
+    });
 });
     
